@@ -17,7 +17,7 @@ class PostFactory extends Factory
     {
         $title = $this->faker->text(30);
         $file = File::all()->random(1)->first();
-        // dd($file->name);
+
         return [
             'uuid' => Str::uuid(),
             'title' => $title,
